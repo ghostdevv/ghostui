@@ -3,7 +3,7 @@
 @use 'sass-hex-rgb/index.scss' as rgb;
 
 /* Core base styles */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import './quicksand.scss';
 @import 'greset/greset.css';
 
 /* Apply theme */
@@ -20,6 +20,7 @@ body {
 	background-color: var(--background-primary);
 	font-family: var(--font-family);
 	color: var(--text);
+	font-variation-settings: 'wght' 600, '';
 }
 
 /* Theme */
