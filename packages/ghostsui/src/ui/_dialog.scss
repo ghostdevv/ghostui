@@ -1,3 +1,4 @@
+@use '../utils';
 @import 'include-media/dist/include-media.scss';
 
 dialog {
@@ -18,9 +19,7 @@ dialog {
 		display: block;
 	}
 
-	&:focus {
-		outline: 2px solid var(--primary);
-	}
+	@include utils.focus-outline($offset: false);
 
 	&::backdrop {
 		background: rgba(18, 18, 20, 0.8);

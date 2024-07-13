@@ -1,0 +1,9 @@
+@mixin focus-outline($offset: true) {
+	&:focus-visible:not(:disabled) {
+		outline: 3px solid var(--primary);
+
+		@if $offset {
+			outline-offset: 2px;
+		}
+	}
+}

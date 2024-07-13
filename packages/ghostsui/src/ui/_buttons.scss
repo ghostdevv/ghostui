@@ -1,3 +1,5 @@
+@use '../utils';
+
 @mixin button {
 	--btn-background: var(--primary);
 	--btn-highlight: var(--primary-hover);
@@ -18,19 +20,15 @@
 
 	text-decoration: none;
 
+	@include utils.focus-outline();
+
 	&:hover:not(&:disabled),
-	&:focus:not(&:disabled),
 	&:active:not(&:disabled) {
 		background-color: var(--btn-highlight);
 		border-color: var(--btn-highlight);
 		color: var(--text);
 
 		text-decoration: none;
-	}
-
-	&:focus:not(&:disabled),
-	&:active:not(&:disabled) {
-		outline: none;
 	}
 
 	&:disabled {
