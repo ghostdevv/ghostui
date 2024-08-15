@@ -1,0 +1,9 @@
+fieldset {
+	padding: 8px 16px;
+	border: 2px solid var(--background-tertiary);
+	border-radius: 12px;
+
+	legend {
+		padding: 0px 8px;
+	}
+}
