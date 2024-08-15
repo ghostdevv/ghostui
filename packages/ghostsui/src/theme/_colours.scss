@@ -36,10 +36,3 @@ $colours: (
 @function colourRGB($colour) {
 	@return rgb.toValues(map.get($colours, $colour));
 }
-
-@mixin vars() {
-	@each $variable, $colour in $colours {
-		--#{$variable}: #{$colour};
-		--#{$variable}-rgb: #{rgb.toValues($colour)};
-	}
-}

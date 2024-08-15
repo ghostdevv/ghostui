@@ -1,4 +1,4 @@
-@use '../layout/flex';
+@use '../utils/flex';
 
 form {
 	@include flex.column;

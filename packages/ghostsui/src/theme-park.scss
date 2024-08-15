@@ -1,4 +1,4 @@
-@use './theme' as t;
+@use './theme/colours' as t;
 
 :root {
 	--main-bg-color: #{t.colour('background-primary')};

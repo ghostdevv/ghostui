@@ -1,18 +1,15 @@
 /* Theme Imports */
-@use './theme.scss';
-@use 'sass-hex-rgb/index.scss' as rgb;
+@use './theme/vars.scss' as t;
 
 /* Core base styles */
-@import './quicksand.scss';
+@import './theme/font.scss';
 @import 'greset/greset.css';
 
 /* Apply theme */
 :root,
 ::backdrop {
 	font-size: 16px;
-	--font-family: 'Quicksand', sans-serif;
-
-	@include theme.vars();
+	@include t.vars();
 }
 
 head,
@@ -23,12 +20,10 @@ body {
 	font-variation-settings: 'wght' 600, '';
 }
 
-/* Theme */
-@import './theme/scrollbar';
-@import './theme/anchor';
-@import './theme/mark';
-
 /* UI */
+@import './ui/scrollbar';
+@import './ui/anchor';
+@import './ui/mark';
 @import './ui/hr';
 @import './ui/cards';
 @import './ui/lists';
@@ -40,12 +35,10 @@ body {
 @import './ui/dialog';
 @import './ui/code';
 @import './ui/fieldset';
-
-/* Layout */
-@import './layout/flex';
-@import './layout/figure';
-@import './layout/section';
-@import './layout/text';
+@import './ui/figure';
+@import './ui/section';
+@import './ui/text';
 
 /* Utils */
+@import './utils/flex';
 @import './utils/screen-readers';
