@@ -31,6 +31,10 @@ button,
 	&:focus:not(:disabled) {
 		--primary: var(--primary-hover);
 
+		&.outline {
+			background-color: var(--primary);
+		}
+
 		&.icon {
 			color: var(--primary-hover);
 		}
