@@ -4,24 +4,36 @@ button,
 	background-color: var(--primary);
 	border: 2px solid var(--primary);
 	color: var(--text);
+
 	border-radius: 8px;
 	font-weight: 400;
+	text-decoration: none;
 
 	padding: 12px 24px;
 	display: inline-block;
 	margin: 4px;
 
-	transition:
-		border-color 0.2s ease-in-out,
-		background-color 0.2s ease-in-out;
+	transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 
-	text-decoration: none;
+	&.icon {
+		transition: color 0.2s ease-in-out;
+		background-color: transparent;
+		border: none;
+		padding: 8px;
+
+		display: inline-flex;
+		align-items: center;
+		gap: 8px;
+	}
 
 	&:hover:not(:disabled),
 	&:active:not(:disabled),
 	&:focus:not(:disabled) {
-		background-color: var(--primary-hover);
-		border-color: var(--primary-hover);
+		--primary: var(--primary-hover);
+
+		&.icon {
+			color: var(--primary-hover);
+		}
 	}
 
 	&:focus-visible:not(:disabled) {
