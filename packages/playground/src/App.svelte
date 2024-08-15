@@ -31,6 +31,7 @@
 <a class="card" href="/"> Link Card</a>
 <a class="card blue" href="/"> Blue Link Card</a>
 <button class="card">Button Card</button>
+<div class="card"><p>Regular Card</p></div>
 
 <input type="checkbox" />
 <input type="checkbox" class="switch" />
