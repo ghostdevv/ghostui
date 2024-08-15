@@ -7,6 +7,11 @@ code {
 	font-weight: 500;
 }
 
+code:not(pre code) {
+	color: var(--secondary);
+	white-space: pre;
+}
+
 pre code {
 	display: block;
 	width: 100%;
@@ -17,4 +22,9 @@ pre code {
 
 	overflow-x: auto;
 	display: block;
+}
+
+code,
+pre {
+	font-family: 'Comic Mono', monospace;
 }
