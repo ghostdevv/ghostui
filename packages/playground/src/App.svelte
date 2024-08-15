@@ -29,6 +29,8 @@
 <a href="https://ghostdev.xyz" class="button"> Anchor styled as button </a>
 
 <a class="card" href="/"> Link Card</a>
+<a class="card blue" href="/"> Blue Link Card</a>
+<button class="card">Button Card</button>
 
 <input type="checkbox" />
 <input type="checkbox" class="switch" />
