@@ -1,6 +1,4 @@
-/* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd */
 kbd,
-/* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code */
 code {
 	display: inline-block;
 	background-color: var(--background-tertiary);
@@ -18,4 +16,5 @@ pre code {
 	border-radius: 16px;
 
 	overflow-x: auto;
+	display: block;
 }
