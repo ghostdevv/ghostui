@@ -1,5 +1,4 @@
-a,
-.anchor {
+a {
 	color: var(--secondary);
 
 	font-weight: 500;
@@ -11,9 +10,7 @@ a,
 
 	&:focus,
 	&:active {
-		transition:
-			background-color 0.2s ease-in-out,
-			color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 
 		background-color: rgba(var(--secondary-rgb), 0.2);
 
