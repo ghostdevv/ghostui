@@ -1,7 +1,7 @@
 @use '../utils/flex';
 
 .card {
-	--card-bg: var(--background-tertiary);
+	--card-bg: var(--background-secondary);
 	--card-highlight: var(--primary-hover);
 
 	display: flex;
