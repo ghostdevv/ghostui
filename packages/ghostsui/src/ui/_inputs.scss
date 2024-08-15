@@ -1,7 +1,7 @@
-@use '../utils/flex';
-
 form {
-	@include flex.column;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 	gap: 8px;
 }
 
@@ -69,15 +69,11 @@ textarea {
 
 input:not([type='checkbox'], [type='radio']) {
 	@include base;
-}
 
-input[type='checkbox'] {
-	margin: 0px 4px 0px 0px;
-}
-
-input[type='color'] {
-	padding: 8px;
-	height: 48px;
+	&[type='color'] {
+		padding: 8px;
+		height: 48px;
+	}
 }
 
 input,
@@ -169,6 +165,8 @@ input[type='radio'] {
 }
 
 input[type='checkbox'] {
+	margin: 0px 4px 0px 0px;
+
 	&:not(.switch) {
 		border-radius: 7px;
 
