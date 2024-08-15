@@ -354,14 +354,20 @@ p q r s t u v w x y z | ~ </pre>
 			<div>
 				<h3>No <code>&lt;figure&gt;</code> element</h3>
 				<p>
-					<img src="http://placekitten.com/480/480" alt="alt text" />
+					<img
+						src="https://http.cat/418"
+						class="small"
+						alt="alt text" />
 				</p>
 				<h3>
 					Wrapped in a <code>&lt;figure&gt;</code> element, no
 					<code>&lt;figcaption&gt;</code>
 				</h3>
 				<figure>
-					<img src="http://placekitten.com/420/420" alt="alt text" />
+					<img
+						src="https://http.cat/418"
+						class="small"
+						alt="alt text" />
 				</figure>
 				<h3>
 					Wrapped in a <code>&lt;figure&gt;</code> element, with a
@@ -369,9 +375,44 @@ p q r s t u v w x y z | ~ </pre>
 				</h3>
 				<figure>
 					<img
-						src="http://placekitten.com/420/420"
+						src="https://http.cat/418"
+						class="small"
 						alt="Image alt text" />
 					<figcaption>Here is a caption for this image.</figcaption>
+				</figure>
+
+				<h3>Figure with table</h3>
+				<figure>
+					<table>
+						<thead>
+							<tr>
+								<th>Table Heading 1</th>
+								<th>Table Heading 2</th>
+								<th>Table Heading 3</th>
+								<th>Table Heading 4</th>
+								<th>Table Heading 5</th>
+								<th>Table Heading 6</th>
+								<th>Table Heading 7</th>
+								<th>Table Heading 8</th>
+								<th>Table Heading 9</th>
+								<th>Table Heading 10</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Table Cell 1</td>
+								<td>Table Cell 2</td>
+								<td>Table Cell 3</td>
+								<td>Table Cell 4</td>
+								<td>Table Cell 5</td>
+								<td>Table Cell 6</td>
+								<td>Table Cell 7</td>
+								<td>Table Cell 8</td>
+								<td>Table Cell 9</td>
+								<td>Table Cell 10</td>
+							</tr>
+						</tbody>
+					</table>
 				</figure>
 			</div>
 			<footer><p><a href="#top">[Top]</a></p></footer>
@@ -645,3 +686,10 @@ p q r s t u v w x y z | ~ </pre>
 		<a href="https://twiiter.com">GHOST</a>
 	</p>
 </footer>
+
+<style>
+	img.small {
+		width: 400px;
+		height: auto;
+	}
+</style>
