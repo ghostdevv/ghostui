@@ -5,8 +5,6 @@ form {
 	gap: 8px;
 }
 
-/** todo - handle inputs that require to be col like radio */
-/** Add a slight margin when using a input in a label */
 label:has(input),
 label:has(select),
 label:has(textarea) {
@@ -109,22 +107,20 @@ select {
 
 // Checkbox and Radio based on https://codepen.io/aaroniker/pen/ZEYoxEY
 
+// todo focus style with outline
 input[type='checkbox'],
 input[type='radio'] {
-	-webkit-appearance: none;
-	-moz-appearance: none;
+	appearance: none;
 
 	height: 22px;
 	outline: none;
 	display: inline-block;
-	vertical-align: top;
 	position: relative;
-	margin: 0;
 	cursor: pointer;
 
 	border: 2px solid var(--background-tertiary);
 
-	transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+	transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 
 	&:after {
 		content: '';
@@ -147,7 +143,8 @@ input[type='radio'] {
 	}
 
 	&:focus:not(&:disabled),
-	&:hover:not(&:disabled) {
+	&:hover:not(&:disabled),
+	&:checked {
 		border-color: var(--primary);
 	}
 
@@ -168,7 +165,7 @@ input[type='checkbox'] {
 	margin: 0px 4px 0px 0px;
 
 	&:not(.switch) {
-		border-radius: 7px;
+		border-radius: 8px;
 
 		&:after {
 			width: 5px;
@@ -188,12 +185,12 @@ input[type='checkbox'] {
 
 	&.switch {
 		width: 38px;
-		border-radius: 11px;
+		border-radius: 12px;
 
 		&:after {
 			left: 2px;
 			top: 1.5px;
-			border-radius: 50%;
+			border-radius: 100%;
 			width: 15px;
 			height: 15px;
 			background: var(--switch-colour, var(--text-grey));
@@ -216,27 +213,18 @@ input[type='checkbox'] {
 }
 
 input[type='radio'] {
-	border-radius: 100%;
-
 	width: 22px;
 	height: 22px;
-	padding: 12px;
+	border-radius: 100%;
 
 	&:after {
-		width: 20px;
-		height: 20px;
-
+		width: 10px;
+		height: 10px;
 		border-radius: 100%;
 		background: var(--text);
-		opacity: 0;
 
-		top: 2.2px;
-		left: 2.2px;
-
-		transform: scale(var(--s, 0.8));
-	}
-
-	&:checked {
-		--s: 0.6;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 	}
 }
