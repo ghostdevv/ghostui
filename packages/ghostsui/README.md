@@ -10,8 +10,8 @@ You can use by importing it or via a cdn:
 
     ```html
     <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/ghostsui@2/ghostsui.css"
+    	rel="stylesheet"
+    	href="https://cdn.jsdelivr.net/npm/ghostsui@2/ghostsui.css"
     />
     ```
 
@@ -26,7 +26,7 @@ You can use by importing it or via a cdn:
     ```
 
 -   CSS Import
-    
+
     ```bash
     npm install ghostsui
     ```
@@ -50,6 +50,6 @@ You can use ghostsui with [Theme Park](https://theme-park.dev/) by importing the
 For example, for Jellyfin you can do:
 
 ```css
-@import url("https://theme-park.dev/css/base/jellyfin/jellyfin-base.css");
-@import url("https://cdn.jsdelivr.net/npm/ghostsui@2/theme-park.css");
+@import url('https://theme-park.dev/css/base/jellyfin/jellyfin-base.css');
+@import url('https://cdn.jsdelivr.net/npm/ghostsui@2/theme-park.css');
 ```

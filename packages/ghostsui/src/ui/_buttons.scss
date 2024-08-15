@@ -11,7 +11,9 @@ button,
 	display: inline-block;
 	margin: 4px;
 
-	transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	transition:
+		border-color 0.2s ease-in-out,
+		background-color 0.2s ease-in-out;
 
 	text-decoration: none;
 

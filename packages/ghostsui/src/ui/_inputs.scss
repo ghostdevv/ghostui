@@ -99,7 +99,10 @@ input[type='radio'] {
 
 	border: 2px solid var(--background-tertiary);
 
-	transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+	transition:
+		background 0.3s,
+		border-color 0.3s,
+		box-shadow 0.2s;
 
 	&:after {
 		content: '';
@@ -108,7 +111,8 @@ input[type='radio'] {
 		top: 0;
 		position: absolute;
 
-		transition: transform 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2),
+		transition:
+			transform 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2),
 			opacity 0.2s;
 	}
 
