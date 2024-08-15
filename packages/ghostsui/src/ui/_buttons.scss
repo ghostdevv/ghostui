@@ -28,7 +28,8 @@ button,
 
 	&:hover:not(:disabled),
 	&:active:not(:disabled),
-	&:focus:not(:disabled) {
+	&:focus:not(:disabled),
+	&.active {
 		--primary: var(--primary-hover);
 		color: var(--text);
 
