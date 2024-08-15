@@ -456,163 +456,146 @@ p q r s t u v w x y z | ~ </pre>
 			<footer><p><a href="#top">[Top]</a></p></footer>
 		</article>
 	</section>
+
 	<section id="forms">
 		<header><h1>Form elements</h1></header>
 		<form>
 			<fieldset id="forms__input">
 				<legend>Input fields</legend>
+
 				<p>
-					<label for="input__text">Text Input</label>
-					<input
-						id="input__text"
-						type="text"
-						placeholder="Text Input" />
+					<label>
+						Text Input
+						<input type="text" placeholder="Text Input" />
+					</label>
 				</p>
 				<p>
-					<label for="input__password">Password</label>
-					<input
-						id="input__password"
-						type="password"
-						placeholder="Type your Password" />
+					<label>
+						Password
+
+						<input
+							type="password"
+							placeholder="Type your Password" />
+					</label>
 				</p>
 				<p>
-					<label for="input__webaddress">Web Address</label>
-					<input
-						id="input__webaddress"
-						type="url"
-						placeholder="http://yoursite.com" />
+					<label>
+						Web Address
+						<input type="url" placeholder="http://yoursite.com" />
+					</label>
 				</p>
 				<p>
-					<label for="input__emailaddress">Email Address</label>
-					<input
-						id="input__emailaddress"
-						type="email"
-						placeholder="name@email.com" />
+					<label>
+						Email Address
+						<input type="email" placeholder="name@email.com" />
+					</label>
 				</p>
 				<p>
-					<label for="input__phone">Phone Number</label>
-					<input
-						id="input__phone"
-						type="tel"
-						placeholder="(999) 999-9999" />
+					<label>
+						Phone Number
+						<input type="tel" placeholder="(999) 999-9999" />
+					</label>
 				</p>
 				<p>
-					<label for="input__search">Search</label>
-					<input
-						id="input__search"
-						type="search"
-						placeholder="Enter Search Term" />
+					<label>
+						Search
+						<input type="search" placeholder="Enter Search Term" />
+					</label>
 				</p>
 				<p>
-					<label for="input__text2">Number Input</label>
-					<input
-						id="input__text2"
-						type="number"
-						placeholder="Enter a Number" />
+					<label>
+						Number Input
+						<input type="number" placeholder="Enter a Number" />
+					</label>
 				</p>
 				<p>
-					<label for="input__text3" class="error">Error</label>
-					<input
-						id="input__text3"
-						class="is-error"
-						type="text"
-						placeholder="Text Input" />
+					<label class="error">
+						Error
+						<input
+							class="is-error"
+							type="text"
+							placeholder="Text Input" />
+					</label>
 				</p>
 				<p>
-					<label for="input__text4" class="valid">Valid</label>
-					<input
-						id="input__text4"
-						class="is-valid"
-						type="text"
-						placeholder="Text Input" />
+					<label class="valid">
+						Valid
+						<input
+							class="is-valid"
+							type="text"
+							placeholder="Text Input" />
+					</label>
 				</p>
 			</fieldset>
+
 			<p><a href="#top">[Top]</a></p>
 			<fieldset id="forms__select">
 				<legend>Select menus</legend>
-				<p>
-					<label for="select">Select</label>
-					<select id="select">
+
+				<label>
+					Select
+					<select>
 						<optgroup label="Option Group">
 							<option>Option One</option>
 							<option>Option Two</option>
 							<option>Option Three</option>
 						</optgroup>
 					</select>
-				</p>
+				</label>
 			</fieldset>
+
 			<p><a href="#top">[Top]</a></p>
+
 			<fieldset id="forms__checkbox">
 				<legend>Checkboxes</legend>
-				<ul class="list list--bare">
-					<li>
-						<label for="checkbox1"
-							><input
-								id="checkbox1"
-								name="checkbox"
-								type="checkbox"
-								checked="checked" /> Choice A</label>
-					</li>
-					<li>
-						<label for="checkbox2"
-							><input
-								id="checkbox2"
-								name="checkbox"
-								type="checkbox" /> Choice B</label>
-					</li>
-					<li>
-						<label for="checkbox3"
-							><input
-								id="checkbox3"
-								name="checkbox"
-								type="checkbox" /> Choice C</label>
-					</li>
-				</ul>
+
+				<label>
+					Choice A
+					<input name="checkbox" type="checkbox" checked />
+				</label>
+				<label>
+					Choice B
+					<input name="checkbox" type="checkbox" />
+				</label>
+				<label>
+					Choice C
+					<input name="checkbox" type="checkbox" />
+				</label>
 			</fieldset>
 			<p><a href="#top">[Top]</a></p>
+
 			<fieldset id="forms__radio">
 				<legend>Radio buttons</legend>
-				<ul class="list list--bare">
-					<li>
-						<label for="radio1"
-							><input
-								id="radio1"
-								name="radio"
-								type="radio"
-								class="radio"
-								checked="checked" /> Option 1</label>
-					</li>
-					<li>
-						<label for="radio2"
-							><input
-								id="radio2"
-								name="radio"
-								type="radio"
-								class="radio" /> Option 2</label>
-					</li>
-					<li>
-						<label for="radio3"
-							><input
-								id="radio3"
-								name="radio"
-								type="radio"
-								class="radio" /> Option 3</label>
-					</li>
-				</ul>
+
+				<label>
+					Option 1
+					<input name="radio" type="radio" class="radio" checked />
+				</label>
+				<label>
+					Option 2
+					<input name="radio" type="radio" class="radio" />
+				</label>
+				<label>
+					Option 3
+					<input name="radio" type="radio" class="radio" />
+				</label>
 			</fieldset>
 			<p><a href="#top">[Top]</a></p>
+
 			<fieldset id="forms__textareas">
 				<legend>Textareas</legend>
 				<p>
-					<label for="textarea">Textarea</label>
-					<textarea
-						id="textarea"
-						rows="8"
-						cols="48"
-						placeholder="Enter your message here" />
+					<label>
+						Textarea
+						<textarea
+							rows="8"
+							cols="48"
+							placeholder="Enter your message here" />
+					</label>
 				</p>
 			</fieldset>
 			<p><a href="#top">[Top]</a></p>
+
 			<fieldset id="forms__html5">
 				<legend>HTML5 inputs</legend>
 
@@ -655,20 +638,17 @@ p q r s t u v w x y z | ~ </pre>
 				</label>
 			</fieldset>
 			<p><a href="#top">[Top]</a></p>
+
 			<fieldset id="forms__action">
 				<legend>Action buttons</legend>
-				<p>
-					<input type="submit" value="<input type=submit>" />
-					<input type="button" value="<input type=button>" />
-					<input type="reset" value="<input type=reset>" />
-					<input type="submit" value="<input disabled>" disabled />
-				</p>
+
 				<p>
 					<button type="submit">&lt;button type=submit&gt;</button>
 					<button type="button">&lt;button type=button&gt;</button>
 					<button type="reset">&lt;button type=reset&gt;</button>
-					<button type="button" disabled
-						>&lt;button disabled&gt;</button>
+					<button type="button" disabled>
+						&lt;button disabled&gt;
+					</button>
 				</p>
 			</fieldset>
 			<p><a href="#top">[Top]</a></p>
