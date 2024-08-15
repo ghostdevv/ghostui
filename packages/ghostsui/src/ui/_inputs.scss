@@ -17,7 +17,6 @@ label {
 	&:has(select) {
 		display: block;
 		text-align: left;
-
 	}
 
 	> :not([hidden]) {
@@ -170,7 +169,7 @@ input[type='checkbox'] {
 			border-radius: 50%;
 			width: 15px;
 			height: 15px;
-			background: var(--switch-colour, rgba(var(--text-rgb), 0.7));
+			background: var(--switch-colour, var(--text-grey));
 			transform: translateX(var(--x, 0));
 		}
 
