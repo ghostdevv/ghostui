@@ -389,7 +389,7 @@ p q r s t u v w x y z | ~ </pre>
 					<img
 						src="https://http.cat/418"
 						class="small"
-						alt="alt text" />
+						alt="cat in a teapot" />
 				</p>
 				<h3>
 					Wrapped in a <code>&lt;figure&gt;</code> element, no
@@ -399,7 +399,7 @@ p q r s t u v w x y z | ~ </pre>
 					<img
 						src="https://http.cat/418"
 						class="small"
-						alt="alt text" />
+						alt="cat in a teapot" />
 				</figure>
 				<h3>
 					Wrapped in a <code>&lt;figure&gt;</code> element, with a
@@ -409,7 +409,7 @@ p q r s t u v w x y z | ~ </pre>
 					<img
 						src="https://http.cat/418"
 						class="small"
-						alt="Image alt text" />
+						alt="cat in a teapot" />
 					<figcaption>Here is a caption for this image.</figcaption>
 				</figure>
 
@@ -451,12 +451,13 @@ p q r s t u v w x y z | ~ </pre>
 		</article>
 		<article id="embedded__audio">
 			<header><h2>Audio</h2></header>
-			<div><audio controls="">audio</audio></div>
+			<div><audio controls>audio</audio></div>
 			<footer><p><a href="#top">[Top]</a></p></footer>
 		</article>
 		<article id="embedded__video">
 			<header><h2>Video</h2></header>
-			<div><video controls="">video</video></div>
+			<!-- svelte-ignore a11y-media-has-caption -->
+			<div><video controls>video</video></div>
 			<footer><p><a href="#top">[Top]</a></p></footer>
 		</article>
 		<article id="embedded__canvas">
@@ -689,6 +690,7 @@ p q r s t u v w x y z | ~ </pre>
 </main>
 <footer>
 	<p>
+		Based on
 		<a href="http://github.com/cbracco/html5-test-page">HTML 5 test page</a>
 		by <a href="http://twitter.com/cbracco">@cbracco</a>
 	</p>
