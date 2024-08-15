@@ -30,6 +30,7 @@ button,
 	&:active:not(:disabled),
 	&:focus:not(:disabled) {
 		--primary: var(--primary-hover);
+		color: var(--text);
 
 		&.outline {
 			background-color: var(--primary);
