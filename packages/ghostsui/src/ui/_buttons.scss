@@ -25,6 +25,10 @@ button,
 		display: inline-flex;
 		align-items: center;
 		gap: 8px;
+
+		&.muted {
+			color: var(--text-grey);
+		}
 	}
 
 	&:hover:not(:disabled),
