@@ -19,7 +19,8 @@
 		<button
 			class="outline"
 			class:active={selected == option}
-			on:click={() => (selected = option)}>
+			on:click={() => (selected = option)}
+		>
 			{option}
 		</button>
 	{/each}

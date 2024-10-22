@@ -22,7 +22,8 @@ pre:has(code) {
 	padding: 16px;
 	border-radius: 8px;
 	background-color: var(--background-secondary) !important;
-	box-shadow: 1px 1px 6px var(--background-tertiary) inset,
+	box-shadow:
+		1px 1px 6px var(--background-tertiary) inset,
 		-1px -1px 6px var(--background-primary) inset;
 
 	code {

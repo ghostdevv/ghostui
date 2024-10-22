@@ -10,7 +10,9 @@
 	// box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.1);
 	background-color: var(--card-bg);
 	color: var(--text);
-	transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	transition:
+		background-color 0.2s ease-in-out,
+		border-color 0.2s ease-in-out;
 
 	min-width: 250px;
 	align-self: stretch;
