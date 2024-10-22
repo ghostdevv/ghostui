@@ -330,6 +330,10 @@ p q r s t u v w x y z | ~ </pre>
 					rendered, non-textual annotation.
 				</p>
 				<p>
+					I have sneakily inserted a <code>code</code> element in this
+					text to see how it looks.
+				</p>
+				<p>
 					<del>This text is deleted</del> and
 					<ins>This text is inserted</ins>.
 				</p>
