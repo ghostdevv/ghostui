@@ -1,45 +1,39 @@
-name: Release
+name: Release Package
 
 on:
-    push:
-        branches:
-            - main
+    release:
+        types: [created]
 
 jobs:
-    release:
-        if: github.repository == 'ghostdevv/ghostsui'
-        permissions:
-            contents: write # to create release (changesets/action)
-            pull-requests: write # to create pull request (changesets/action)
-        name: Release
+    publish-npm:
         runs-on: ubuntu-latest
+        permissions:
+            id-token: write
         steps:
-            - name: Checkout Repo
+            - name: Checkout
               uses: actions/checkout@v4
-              with:
-                  # This makes Actions fetch all Git history so that Changesets can generate changelogs with the correct commits
-                  fetch-depth: 0
 
-            - name: Setup Node.js 18.x
-              uses: actions/setup-node@v2
+            - name: Setup Node 22
+              uses: actions/setup-node@v4
               with:
-                  node-version: 18.x
+                  node-version: 22
+                  registry-url: https://registry.npmjs.org/
 
             - name: Setup PNPM
-              uses: pnpm/action-setup@v2.4.0
+              uses: pnpm/action-setup@v4.0.0
               with:
-                  version: 8.10.2
+                  version: 9.12.2
 
-            - name: Install Dependencies
+            - name: Install
               run: pnpm install --frozen-lockfile
 
-            - name: Build
-              run: pnpm build
+            # - name: Build
+            #   run: pnpm build
 
-            - name: Create Release Pull Request
-              uses: changesets/action@v1
-              with:
-                  publish: pnpm changeset publish
+            - name: Publish
+              run: |
+                  pnpm config set "//registry.npmjs.org/:_authToken" "${NPM_TOKEN}"
+                  pnpm publish --no-git-checks
               env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+                  NPM_CONFIG_PROVENANCE: true
